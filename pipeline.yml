@@ -9,7 +9,7 @@ pipelines:
         execution: 
           onExecute:
             - echo "Step 1"
-            - sleep 5s
+            - sleep 4s
             
       - name: Second_Step
         type: Bash
