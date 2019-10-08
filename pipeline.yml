@@ -9,7 +9,7 @@ pipelines:
         execution: 
           onExecute:
             - echo "Step 1"
-            - sleep 2
+            - sleep 5s
             
       - name: Second_Step
         type: Bash
@@ -19,7 +19,7 @@ pipelines:
         execution: 
           onExecute:
             - echo "Step 2"
-            - sleep 2
+            - sleep 5s
             
       - name: Third_Step
         type: Bash
@@ -29,7 +29,7 @@ pipelines:
         execution: 
           onExecute:
             - echo "Step 2"
-            - sleep 2
+            - sleep 5s
           
       - name: Fourth_Step
         type: Bash
@@ -39,4 +39,4 @@ pipelines:
         execution: 
           onExecute:
             - echo "Step 2"
-            - sleep 2
+            - sleep 5s
