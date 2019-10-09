@@ -1,5 +1,5 @@
 pipelines:
-  - name: First_Pipeline_Long_Pipeline_Name_Very_Long
+  - name: First_Pipeline_Long_Pipeline_Name_Very_Long_Again
     steps:
       - name: First_Step
         type: Bash
@@ -10,33 +10,4 @@ pipelines:
           onExecute:
             - echo "Step 1"
             - sleep 5s
-            
-      - name: Second_Step
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: First_Step
-        execution: 
-          onExecute:
-            - echo "Step 2"
-            - sleep 5s
-            
-      - name: Third_Step
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: Second_Step
-        execution: 
-          onExecute:
-            - echo "Step 2"
-            - sleep 5s
-          
-      - name: Fourth_Step
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: Third_Step
-        execution: 
-          onExecute:
-            - echo "Step 2"
-            - sleep 5s
+   
